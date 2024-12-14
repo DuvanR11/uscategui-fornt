@@ -47,7 +47,6 @@ const WhatPanelClient: any = () => {
 };
 
 
-
   return ( 
     <div className="grid grid-cols-1 pt-6 xl:gap-4 justify-center dark:bg-gray-900">
         {

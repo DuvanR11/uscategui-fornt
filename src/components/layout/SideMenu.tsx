@@ -4,7 +4,7 @@ import { DropdownSelect } from '@/components/ui/dropdown';
 import React from 'react'
 import { useEffect } from 'react';
 import NextLink from 'next/link'  
-import { usePathname, useSearchParams } from 'next/navigation';
+// import { usePathname, useSearchParams } from 'next/navigation';
 import { FaWallet, FaImage, FaWhatsapp   } from "react-icons/fa6";
 import { FaHome, FaUsers  } from "react-icons/fa";
 import { IoFastFoodOutline } from "react-icons/io5";
@@ -30,9 +30,9 @@ const subRoutes = [
 
 export const SideMenu = () => {
 
-    const pathname = usePathname()
-    const searchParams = useSearchParams()
-    const centerId = searchParams?.get('centerId')
+    // const pathname = usePathname()
+    // const searchParams = useSearchParams()
+    // const centerId = searchParams?.get('centerId')
 
      // Sidebar
      useEffect(() => {
@@ -81,7 +81,7 @@ export const SideMenu = () => {
 
   return (
     <>
-         <aside id="sidebar" className="fixed hidden top-0 left-0 z-20 flex-col flex-shrink-0 w-64 h-full pt-16 font-normal duration-75 lg:flex transition-width" aria-label="Sidebar">
+         {/* <aside id="sidebar" className="fixed hidden top-0 left-0 z-20 flex-col flex-shrink-0 w-64 h-full pt-16 font-normal duration-75 lg:flex transition-width" aria-label="Sidebar">
             <div className="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
                 <div className="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
                     <div className="flex-1 px-3 space-y-1 bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
@@ -191,7 +191,7 @@ export const SideMenu = () => {
                     </div>           
                 </div>
             </div>
-        </aside>
+        </aside> */}
 
         <div className="fixed hidden inset-0 z-10 bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
     </>
